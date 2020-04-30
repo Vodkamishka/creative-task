@@ -1,0 +1,23 @@
+include ./components/header/header
+include ./components/sidebar/sidebar
+include ./components/main/main
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        title Test for Creative
+    body
+        .creative-page
+            -const list = ["Home", "About", "Services", "Careers", "News", "Documentation", "SelectAll"];
+            .creative-page__header
+                +header
+            .creative-page__content
+                +sidebar(list)
+                +main(list)
+                
+                
+
+   

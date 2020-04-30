@@ -1,0 +1,14 @@
+.sidebar {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    background: lightskyblue;
+    &_hidden {
+        display: none;
+    }
+}
+@media(max-width: 1200px) {
+    .sidebar {
+        display: none;
+    }
+}

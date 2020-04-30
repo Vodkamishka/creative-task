@@ -1,0 +1,42 @@
+.burger {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+  &__bar {
+    width: 35px;
+    height: 5px;
+    background:black;
+    margin: 6px 0;
+    transition: 0.4s;
+    &_first {
+        margin-top: 0;
+      }
+    &_third {
+        margin-bottom: 0;
+    }
+  }
+  &_changed .burger__bar{
+    &_first {
+      -webkit-transform: rotate(-45deg) translate(-8.5px, 7.5px) ;
+      transform: rotate(-36deg) translate(-8.5px, 7.5px);
+      width: 40px;
+    }
+    &_second {
+      opacity: 0;
+    }
+    &_third {
+      -webkit-transform: rotate(45deg) translate(-8.5px, -7.5px) ;
+      transform: rotate(36deg) translate(-8.5px, -7.5px) ;
+      width: 40px;
+    }
+  }
+  
+  
+}
+@media(max-width: 1200px) {
+  .burger {
+      display: none;
+  }
+}

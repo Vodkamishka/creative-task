@@ -1,0 +1,19 @@
+.navbar {
+    margin-top: 100px;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    &__a {
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+    }
+    &__li {
+        list-style-type: none;
+        display: flex;
+        margin-bottom: 30%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

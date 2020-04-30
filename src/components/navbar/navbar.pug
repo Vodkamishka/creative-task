@@ -1,0 +1,9 @@
+include ../checkbox/checkbox
+
+mixin navbar
+    .navbar(list)
+        ul
+            for i in list
+                li(class="navbar__li")
+                    a(class="navbar__a" href="#")= i
+                    +checkbox(i.toLowerCase())

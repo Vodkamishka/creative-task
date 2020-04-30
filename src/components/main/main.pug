@@ -1,0 +1,8 @@
+mixin main(list)
+    .main
+        .main__checkboxes
+            for i in list
+                .main__checkbox-box-container(class=`${i.toLowerCase()}`)
+                    .main__checkbox-box= i
+      
+            

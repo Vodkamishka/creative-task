@@ -1,0 +1,12 @@
+.header {
+    height: 70px;
+    background: lightgoldenrodyellow;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__burger-menu {
+        height: 27px;
+        position: absolute;
+        right: 5%;
+    }
+}

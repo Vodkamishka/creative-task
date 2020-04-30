@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    
+    height: calc(100vh - 70px);
+    &__checkboxes {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px 0 0 50px;
+    }
+    &__checkbox-box-container {
+        margin: 10px;
+    }
+    &__checkbox-box {
+        width: 150px;
+        height: 150px;
+        border: 5px solid cornflowerblue;
+        background: lightcyan;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        flex-grow: 1;
+        font-weight: 700;
+    }
+    &_hidden {
+        display: none;
+    }
+}
