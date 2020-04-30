@@ -5,6 +5,7 @@
   padding: 0;
   outline: none;
   &__bar-container {
+    margin: 6px 0;
     &:first-child {
       margin-top: 0;
     }
@@ -16,7 +17,6 @@
     width: 35px;
     height: 5px;
     background:black;
-    margin: 6px 0;
     transition: 0.4s;
   }
   &_changed .burger__bar-container{
