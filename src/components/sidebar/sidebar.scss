@@ -2,7 +2,8 @@
     width: 200px;
     display: flex;
     justify-content: center;
-    background: lightskyblue;
+    background: rgb(188, 245, 188);
+    min-height: calc(100vh - 70px);
     &_hidden {
         display: none;
     }

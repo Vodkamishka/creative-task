@@ -1,4 +1,4 @@
-class Header {
+class Burger {
     constructor(el) {
       this.creativePage = el;
       this.init();
@@ -24,5 +24,4 @@ class Header {
     }
   }
   
-  $('.creative-page').each((index, el) => new Header($(el)));
-  
+  $('.creative-page').each((index, el) => new Burger($(el)));

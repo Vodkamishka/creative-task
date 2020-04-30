@@ -1,9 +1,7 @@
 .main {
-    display: flex;
-    justify-content: center;
+    background: lightskyblue;
     flex-grow: 1;
-    
-    height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     &__checkboxes {
         display: flex;
         flex-wrap: wrap;
@@ -11,6 +9,9 @@
     }
     &__checkbox-box-container {
         margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__checkbox-box {
         width: 150px;
@@ -23,8 +24,29 @@
         box-sizing: border-box;
         flex-grow: 1;
         font-weight: 700;
+        word-break: break-all;
+        min-width: 28px;
     }
     &_hidden {
         display: none;
+    }
+}
+@media(max-width: 270px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        &__checkboxes {
+            margin: 0;
+            margin-top: 100px;
+            width: 68%;
+        }
+        &__checkbox-box-container {
+            width: 100%;
+        }
+        &__checkbox-box {
+            width: 100%;
+            height: 150px;
+            
+        }
     }
 }
